@@ -1,6 +1,7 @@
 @Library('Shared') _
 pipeline {
-    agent Any
+
+    agent any
     
     environment{
         SONAR_HOME = tool "Sonar"
@@ -97,11 +98,11 @@ pipeline {
             steps{
                 script{
                         dir('backend'){
-                            docker_build("wanderlust-backend-beta","${params.BACKEND_DOCKER_TAG}","trainwithshubham")
+                            docker_build("wanderlust-backend-beta","${params.BACKEND_DOCKER_TAG}","bhushanpatil")
                         }
                     
                         dir('frontend'){
-                            docker_build("wanderlust-frontend-beta","${params.FRONTEND_DOCKER_TAG}","trainwithshubham")
+                            docker_build("wanderlust-frontend-beta","${params.FRONTEND_DOCKER_TAG}","bhushanpatil")
                         }
                 }
             }
@@ -110,8 +111,8 @@ pipeline {
         stage("Docker: Push to DockerHub"){
             steps{
                 script{
-                    docker_push("wanderlust-backend-beta","${params.BACKEND_DOCKER_TAG}","trainwithshubham") 
-                    docker_push("wanderlust-frontend-beta","${params.FRONTEND_DOCKER_TAG}","trainwithshubham")
+                    docker_push("wanderlust-backend-beta","${params.BACKEND_DOCKER_TAG}","bhushanpatil") 
+                    docker_push("wanderlust-frontend-beta","${params.FRONTEND_DOCKER_TAG}","bhushanpatil")
                 }
             }
         }
