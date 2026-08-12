@@ -24,7 +24,7 @@ pipeline {
         stage("Workspace cleanup"){
             steps{
                 script{
-                    cleanWs()
+                    clean_ws()
                 }
             }
         }
