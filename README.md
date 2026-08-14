@@ -499,19 +499,44 @@ The Shared Library separates common pipeline logic from the application Jenkinsf
 
 The following implementation snippets provide evidence of the project setup, CI/CD execution, Kubernetes deployment, security configuration, and monitoring stages.
 
-- [CD_JOB](screenshots/CD_JOB.png)
-- [cd-blueOcean](screenshots/cd-blueOcean.png)
-- [CI_JOB](screenshots/CI_JOB.png)
-- [ci-blueOcean](screenshots/ci-blueOcean.png)
-- [deployArgoCD](screenshots/deployArgoCD.png)
-- [grafana](screenshots/grafana.png)
-- [node&pods](screenshots/node&pods.png)
-- [nodes](screenshots/nodes.png)
-- [notification](screenshots/notification.png)
-- [nvd-api-keys](screenshots/nvd-api-keys.png)
-- [prom](screenshots/prom.png)
-- [SG](screenshots/SG.png)
-- [wanderlust-images](screenshots/wanderlust-images.png)
+### 1. Infrastructure / Security Group
+![Security Group](./screenshots/SG.png)
+
+### 2. Kubernetes Nodes
+![Kubernetes Nodes](./screenshots/nodes.png)
+
+### 3. Kubernetes Nodes and Pods
+![Nodes and Pods](./screenshots/node-pods.png)
+
+### 4. CI Pipeline
+![CI Pipeline](./screenshots/CI_JOB.png)
+
+### 5. CI Pipeline - Blue Ocean
+![Blue Ocean CI](./screenshots/ci-blueOcean.png)
+
+### 6. CD Pipeline
+![CD Pipeline](./screenshots/CD_JOB.png)
+
+### 7. CD Pipeline - Blue Ocean
+![Blue Ocean CD](./screenshots/cd-blueOcean.png)
+
+### 8. ArgoCD Deployment
+![ArgoCD](./screenshots/deployArgoCD.png)
+
+### 9. Prometheus
+![Prometheus](./screenshots/prom.png)
+
+### 10. Grafana
+![Grafana](./screenshots/grafana.png)
+
+### 11. Application Deployment
+![Wanderlust Application](./screenshots/wanderlust-images.png)
+
+### 12. Notifications
+![Notifications](./screenshots/notification.png)
+
+### 13. NVD API Key Configuration
+![NVD API Key](./screenshots/nvd-api-keys.png)
 
 ---
 
